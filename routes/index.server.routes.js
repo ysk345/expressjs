@@ -11,7 +11,7 @@ router.get('/project', (req, res) => {
     res.render('project', {title: 'Projects'});
 });
 router.get('/service', (req, res) => {
-    res.render('service', {title: 'Service'});
+    res.render('service', {title: 'Services'});
 });
 router.get('/contact', (req, res) => {
     res.render('contact', {title: 'Contact'});

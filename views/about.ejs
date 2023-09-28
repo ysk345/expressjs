@@ -7,7 +7,7 @@
 
 <%- include ('partials/header.ejs') %>
 
-<div class="container-sm text-center">
+<div class="container-sm">
     <h1>About Me</h1>
     <ul class="list-group container-fluid text-center">
         <li class="list-group-item">Name: Sze Ki Yeung</li>
@@ -17,9 +17,12 @@
         <li class="list-group-item">Languages: English, Cantonese, Mandarin</li>
         <li class="list-group-item">Skills: Java, C#, JavaScript, SQL</li>
     </ul><br>
-    <form action="/download" method="get">
-        <button type="submit" class="btn btn-info ">Download Resume</button>
-    </form>
+    <div class="container position-relative mt-2 mb-2">
+        <form action="/download" method="get">
+            <button type="submit" class="btn btn-info position-absolute top-100 start-50 translate-middle">Download Resume</button>
+        </form>
+    </div>
+    
 </div>
 <br>
 

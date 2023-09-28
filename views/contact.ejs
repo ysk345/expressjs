@@ -7,7 +7,17 @@
 
 <%- include ('partials/header.ejs') %>
 
-<div class="container-sm">
+<div class="container-sm" style="width: 30rem">
+    <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-center">Contact Information</h5>
+          <h6 class="card-subtitle mb-2 mt-2 text-body-secondary">Email</h6>
+          <a href="mailto:yskrenee@gmail.com" class="card-link">yskrenee@gmail.com</a>          
+          <h6 class="card-subtitle mb-2 mt-2 text-body-secondary">GitHub</h6>
+          <a href="https://github.com/ysk345" class="card-link">https://github.com/ysk345</a>
+        </div>
+    </div>
+    <br>
     <form action="/" method="post">
         <div class="mb-3">
             <label for="fname" class="form-label">First Name</label>
@@ -23,13 +33,15 @@
         </div>
         <div class="mb-3">
           <label for="contact" class="form-label">Contact Number</label>
-          <input type="number" class="form-control" id="contact">
+          <input type="text" class="form-control" id="contact">          
+        </div>
+        <div class="mb-3"><label for="textarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="=textarea1" rows="3"></textarea>
         </div>
         
         <button type="submit" class="btn btn-primary">Submit</button>    
     </form>
 </div>
-
-
+<br>
 
 <%- include ('partials/footer.ejs') %>
