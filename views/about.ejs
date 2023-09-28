@@ -1,0 +1,26 @@
+<!-- 
+    File name: views\about.ejs
+    Student Name: Sze Ki Yeung
+    Student ID: 301293751
+    Date: 2023-9-27
+ -->
+
+<%- include ('partials/header.ejs') %>
+
+<div class="container-sm text-center">
+    <h1>About Me</h1>
+    <ul class="list-group container-fluid text-center">
+        <li class="list-group-item">Name: Sze Ki Yeung</li>
+        <li class="list-group-item">Other Name: Renee</li>
+        <li class="list-group-item">Place of Birth: Hong Kong</li>
+        <li class="list-group-item">Likes: Java, Apples, Chocolate, Swimming, Walking, Hiking</li>
+        <li class="list-group-item">Languages: English, Cantonese, Mandarin</li>
+        <li class="list-group-item">Skills: Java, C#, JavaScript, SQL</li>
+    </ul><br>
+    <form action="/download" method="get">
+        <button type="submit" class="btn btn-info ">Download Resume</button>
+    </form>
+</div>
+<br>
+
+<%- include ('partials/footer.ejs') %>
