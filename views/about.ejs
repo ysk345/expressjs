@@ -7,23 +7,54 @@
 
 <%- include ('partials/header.ejs') %>
 
-<div class="container-sm">
-    <h1>About Me</h1>
-    <ul class="list-group container-fluid text-center">
-        <li class="list-group-item">Name: Sze Ki Yeung</li>
-        <li class="list-group-item">Other Name: Renee</li>
-        <li class="list-group-item">Place of Birth: Hong Kong</li>
-        <li class="list-group-item">Likes: Java, Apples, Chocolate, Swimming, Walking, Hiking</li>
-        <li class="list-group-item">Languages: English, Cantonese, Mandarin</li>
-        <li class="list-group-item">Skills: Java, C#, JavaScript, SQL</li>
-    </ul><br>
-    <div class="container position-relative mt-2 mb-2">
+<main>
+    <section id="bio-container">
+        <div class="photo ms-5">
+            <img id="profilePic" src="/public/img/profilepic.jpg" style="height: 280px; width: 320px;">
+        </div>
+        
+        <div class="info container-fluid me-5">
+            <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <th scope="row">Name:</th>
+                    <td>Sze Ki Yeung</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Other Name:</th>
+                    <td>Renee</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lives In:</th>
+                    <td colspan="2">Toronto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Likes:</th>
+                    <td colspan="2">Java, Chocolate, Swimming, Cooking</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Favourite IDE:</th>
+                    <td colspan="2">IntelliJ IDEA</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Speaks:</th>
+                    <td colspan="2">English, Cantonese, Mandarin</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Writes:</th>
+                    <td colspan="2">Java, C#, JavaScript, SQL</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </section>
+
+    <div class="container position-relative mt-5 mb-2">
         <form action="/download" method="get">
             <button type="submit" class="btn btn-info position-absolute top-100 start-50 translate-middle">Download Resume</button>
         </form>
     </div>
-    
-</div>
-<br>
+</main>
+<br><br><br>
 
 <%- include ('partials/footer.ejs') %>

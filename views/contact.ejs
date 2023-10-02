@@ -7,16 +7,20 @@
 
 <%- include ('partials/header.ejs') %>
 
+
+
 <div class="container-sm" style="width: 30rem">
-    <div class="card">
+
+    <div class="card text-center">
+        <img src="/public/img/contact-book.png" class="card-img-top" alt="contact">
         <div class="card-body">
-          <h5 class="card-title text-center">Contact Information</h5>
-          <h6 class="card-subtitle mb-2 mt-2 text-body-secondary">Email</h6>
-          <a href="mailto:yskrenee@gmail.com" class="card-link">yskrenee@gmail.com</a>          
-          <h6 class="card-subtitle mb-2 mt-2 text-body-secondary">GitHub</h6>
-          <a href="https://github.com/ysk345" class="card-link">https://github.com/ysk345</a>
+          <h5 class="card-title">Links</h5>
+          <p class="card-text">Send me messages, or see my other projects.</p>
+          <a href="mailto:yskrenee@gmail.com" class="btn btn-dark">Email</a>
+          <a href="https://github.com/ysk345" class="btn btn-dark">GitHub</a>
         </div>
     </div>
+    
     <br>
     <form action="/" method="post">
         <div class="mb-3">
@@ -39,7 +43,7 @@
             <textarea class="form-control" id="=textarea1" rows="3"></textarea>
         </div>
         
-        <button type="submit" class="btn btn-primary">Submit</button>    
+        <button type="submit" class="btn btn-dark">Submit</button>    
     </form>
 </div>
 <br>

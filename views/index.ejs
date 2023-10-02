@@ -5,17 +5,31 @@
     Date: 2023-9-27
  -->
 
+<!-- header imported -->
 <%- include ('partials/header.ejs') %>
-<div class="container-sm">
-    <div class="d-grid gap-2 col-6 mx-auto">
-        <p class="h1">Hello!</p>
-        <a href="about" class="btn btn-info">About Me</a>
-        <a href="project" class="btn btn-info">Project Showcase</a>
-        <a href="service" class="btn btn-info">Services</a>
-        <a href="contact" class="btn btn-info">Contact Information</a>
-        <h1>Mission Statement</h1>
-        <p>Learn something new every day. <br> Be good to people and the environment.</p>
+
+<div class="d-flex justify-content-center mt-2">
+    <div id="welcomeMessageContainer">
+        <p id="welcomeMessage">Hi! Welcome to my page.</p>
     </div>
 </div>
+
+<main>
+    <section>
+        <div class="container-sm">
+            <div class="d-grid gap-2 col-6 mx-auto">                
+                <a href="about" class="btn btn-dark">About Me</a>
+                <a href="project" class="btn btn-dark">Project Showcase</a>
+                <a href="service" class="btn btn-dark">Services</a>
+                <a href="contact" class="btn btn-dark">Contact Information</a>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section class="text-center">
+        <h1>Mission Statement</h1>
+        <p><br>Design and develope lightweight, user-freiendly applications.</p>
+    </section>
+</main>
 
 <%- include ('partials/footer.ejs') %>
